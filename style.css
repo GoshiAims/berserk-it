@@ -1,0 +1,77 @@
+/* style.css for Berserk IT */
+
+/* Ensures the base font is applied if Tailwind isn't fully loaded or if there are conflicts */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar for a more modern feel */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1f2937; /* dark-gray-800 from Tailwind palette */
+}
+::-webkit-scrollbar-thumb {
+    background: #3b82f6; /* blue-500 from Tailwind palette */
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #2563eb; /* blue-600 from Tailwind palette */
+}
+
+/* Hero Section Background Styling */
+.hero-bg {
+    background-color: #111827; /* A very dark gray, almost black (gray-900 in Tailwind) */
+    /* Example for adding a subtle background image or pattern:
+    background-image: url('path/to/your/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay; /* Or another blend mode for subtle effect */
+    /* background-color: rgba(17, 24, 39, 0.8); /* To darken the image if needed */
+}
+
+/* Call to Action Button Hover Effects */
+.cta-button {
+    transition: all 0.3s ease-in-out; /* Smoother transition */
+}
+.cta-button:hover {
+    transform: translateY(-2px) scale(1.03); /* Slight lift and scale */
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3), 0 4px 6px -2px rgba(59, 130, 246, 0.2); /* Enhanced shadow */
+}
+
+/* Service Card Hover Effects */
+.service-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for transform and shadow */
+}
+.service-card:hover {
+    transform: translateY(-8px); /* Slightly more lift */
+    box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.15), 0 10px 10px -5px rgba(59, 130, 246, 0.1); /* Softer, more spread out shadow */
+}
+
+/* Styling for the select dropdown arrow in the contact form if needed,
+   Tailwind's 'appearance-none' removes the default arrow.
+   You might need custom styling if you want a specific arrow icon. */
+select#service {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%239ca3af' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem; /* Adjust padding if using custom arrow */
+}
+
+/* Basic responsive adjustments if not fully handled by Tailwind or for specific overrides */
+@media (max-width: 768px) {
+    /* Example: Adjust hero text size for smaller screens if Tailwind defaults aren't enough */
+    /* #home h1 {
+        font-size: 2.5rem; /* Equivalent to text-4xl */
+    /* }
+    #home p {
+        font-size: 1rem; /* Equivalent to text-base */
+    /* } */
+
+    /* Ensure mobile menu button is always visible if you implement more complex JS for it */
+    /* #mobile-menu-button { display: block; } */
+}
+
+/* Add any other custom CSS rules here */

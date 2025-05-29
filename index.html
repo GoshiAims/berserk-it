@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BerserkIT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased">
+
+    <header class="bg-gray-800/80 backdrop-blur-md shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-blue-500">
+                Berserk<span class="text-white">IT</span>
+            </a>
+            <nav class="space-x-4 md:space-x-6">
+                <a href="#home" class="hover:text-blue-400 transition-colors duration-300">Home</a>
+                <a href="#services" class="hover:text-blue-400 transition-colors duration-300">Services</a>
+                <a href="#why-us" class="hover:text-blue-400 transition-colors duration-300">Why Us</a>
+                <!-- <a href="#testimonials" class="hover:text-blue-400 transition-colors duration-300">Testimonials</a> -->
+                <!-- <a href="#contact" class="hover:text-blue-400 transition-colors duration-300">Contact</a> -->
+                <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg text-sm cta-button hidden md:inline-block">
+                Contact Us
+                </a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <a href="#home" class="block px-6 py-3 hover:bg-gray-700 hover:text-blue-400">Home</a>
+            <a href="#services" class="block px-6 py-3 hover:bg-gray-700 hover:text-blue-400">Services</a>
+            <a href="#why-us" class="block px-6 py-3 hover:bg-gray-700 hover:text-blue-400">Why Us</a>
+            <!-- <a href="#testimonials" class="block px-6 py-3 hover:bg-gray-700 hover:text-blue-400">Testimonials</a> -->
+            <a href="#contact" class="block px-6 py-3 hover:bg-gray-700 hover:text-blue-400">Contact</a>
+            <a href="tel:+6400000000" class="block px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold text-center cta-button">Call Now</a>
+        </div>
+    </header>
+
+    <section id="home" class="hero-bg py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <!-- <img src="https://placehold.co/150x150/111827/3B82F6?text=BerserkIT+Logo" alt="Berserk IT Logo" class="mx-auto mb-8 rounded-full shadow-xl w-32 h-32 md:w-40 md:h-40" onerror="this.onerror=null; this.src='https://placehold.co/150x150/111827/FFFFFF?text=Logo+Error';"> -->
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                <span class="text-blue-500">Berserk</span>IT Solutions:
+                <span class="block sm:inline-block text-gray-200">Tech Problems, Conquered.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                Fast, reliable, and expert IT support for your home and business. We tackle your tech troubles so you don't have to.
+            </p>
+            <div class="space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg cta-button inline-block w-full sm:w-auto">
+                    Get a Free Quote
+                </a>
+                <a href="#services" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg text-lg cta-button inline-block w-full sm:w-auto">
+                    Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-500 mb-3">Our IT Services</h2>
+                <p class="text-lg text-gray-400 max-w-xl mx-auto">Whatever your tech challenge, we've got you covered.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-8 rounded-xl shadow-xl hover:shadow-blue-500/30 transition-all duration-300 service-card">
+                    <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-laptop-medical"></i></div>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Computer Repairs</h3>
+                    <p class="text-gray-300">Slow PC? Virus issues? Hardware failures? We diagnose and fix all computer problems, fast.</p>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-xl shadow-xl hover:shadow-blue-500/30 transition-all duration-300 service-card">
+                    <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-shield-virus"></i></div>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Virus & Malware Removal</h3>
+                    <p class="text-gray-300">Protect your data and privacy with our thorough virus and malware cleanup services.</p>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-xl shadow-xl hover:shadow-blue-500/30 transition-all duration-300 service-card">
+                    <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-wifi"></i></div>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Network & Wi-Fi Setup</h3>
+                    <p class="text-gray-300">Reliable internet and seamless network connectivity for your home or office.</p>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-xl shadow-xl hover:shadow-blue-500/30 transition-all duration-300 service-card">
+                    <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Device Setup & Training</h3>
+                    <p class="text-gray-300">New phone, tablet, or computer? We'll set it up and show you how to use it effectively.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="py-16 md:py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-500 mb-3">Why Choose Berserk IT?</h2>
+                <p class="text-lg text-gray-400 max-w-xl mx-auto">We're not just tech experts; we're your friendly neighborhood IT partners.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md">
+                    <div class="text-blue-500 text-5xl mb-4"><i class="fas fa-bolt"></i></div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Lightning Fast Service</h3>
+                    <p class="text-gray-300">We prioritize quick response times and efficient solutions to get you back up and running ASAP.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md">
+                    <div class="text-blue-500 text-5xl mb-4"><i class="fas fa-user-tie"></i></div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Expert Technicians</h3>
+                    <p class="text-gray-300">Our certified and experienced technicians can handle any IT challenge, big or small.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md">
+                    <div class="text-blue-500 text-5xl mb-4"><i class="fas fa-handshake"></i></div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Customer Focused</h3>
+                    <p class="text-gray-300">Clear communication, transparent pricing, and a commitment to your satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="testimonials" class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-500 mb-3">What Our Clients Say</h2>
+                <p class="text-lg text-gray-400 max-w-xl mx-auto">Real feedback from satisfied customers.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-8 rounded-lg shadow-lg">
+                    <p class="text-gray-300 italic mb-4">"Berserk IT saved the day! My computer was unusably slow, and they had it running like new in no time. Highly recommend!"</p>
+                    <p class="font-semibold text-blue-400">- Alex P., Small Business Owner</p>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-lg shadow-lg">
+                    <p class="text-gray-300 italic mb-4">"Fantastic service for setting up our new office network. Professional, efficient, and very knowledgeable. Thanks, Berserk IT!"</p>
+                    <p class="font-semibold text-blue-400">- Sarah W., Office Manager</p>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-lg shadow-lg md:col-span-2 lg:col-span-1">
+                    <p class="text-gray-300 italic mb-4">"I was worried about losing all my family photos after my hard drive crashed. The team at Berserk IT recovered everything. So grateful!"</p>
+                    <p class="font-semibold text-blue-400">- Michael B., Home User</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="contact" class="py-16 md:py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-500 mb-3">Get in Touch</h2>
+                <p class="text-lg text-gray-400 max-w-xl mx-auto">Ready to solve your IT problems? Contact us today for a free, no-obligation quote!</p>
+            </div>
+            <div class="max-w-3xl mx-auto bg-gray-800 p-8 md:p-12 rounded-xl shadow-2xl">
+                <form action="#" method="POST"> <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Full Name</label>
+                            <input type="text" name="name" id="name" required class="w-full px-4 py-2.5 bg-gray-700 border border-gray-600 rounded-lg text-gray-100 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
+                            <input type="email" name="email" id="email" required class="w-full px-4 py-2.5 bg-gray-700 border border-gray-600 rounded-lg text-gray-100 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors" placeholder="you@example.com">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="phone" class="block text-sm font-medium text-gray-300 mb-1">Phone Number (Optional)</label>
+                        <input type="tel" name="phone" id="phone" class="w-full px-4 py-2.5 bg-gray-700 border border-gray-600 rounded-lg text-gray-100 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors" placeholder="021 123 4567">
+                    </div>
+                    <div class="mb-6">
+                        <label for="service" class="block text-sm font-medium text-gray-300 mb-1">Service Interested In</label>
+                        <select name="service" id="service" class="w-full px-4 py-2.5 bg-gray-700 border border-gray-600 rounded-lg text-gray-100 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors appearance-none">
+                            <option value="">Select a service...</option>
+                            <option value="computer_repair">Computer Repair</option>
+                            <option value="virus_removal">Virus & Malware Removal</option>
+                            <option value="network_setup">Network & Wi-Fi Setup</option>
+                            <!-- <option value="data_recovery">Data Recovery</option> -->
+                            <option value="business_it">Business IT Support</option>
+                            <option value="device_setup">Device Setup & Training</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-8">
+                        <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                        <textarea name="message" id="message" rows="5" required class="w-full px-4 py-2.5 bg-gray-700 border border-gray-600 rounded-lg text-gray-100 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors resize-none" placeholder="Briefly describe your IT issue or request..."></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg cta-button transition-colors">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+                <div id="form-status" class="mt-4 text-center"></div> </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-lg text-gray-400 mb-2">Or reach us directly:</p>
+                <p class="text-xl text-gray-200">
+                    <a href="tel:+64210000000" class="hover:text-blue-400 transition-colors"><i class="fas fa-phone-alt mr-2"></i>(021) 126-6820</a>
+                </p>
+                <p class="text-xl text-gray-200 mt-1">
+                    <a href="mailto:support@berserkit.co.nz" class="hover:text-blue-400 transition-colors"><i class="fas fa-envelope mr-2"></i>keegan@berserk.co.nz</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 border-t border-gray-700 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <div class="mb-4">
+                <a href="#" class="text-2xl font-bold text-blue-500">
+                    Berserk<span class="text-white">IT</span>
+                </a>
+            </div>
+            <p class="mb-2">&copy; <span id="current-year"></span> Berserk IT. All Rights Reserved.</p>
+            <p class="text-sm">Your Trusted Partner for IT Solutions in Auckland, New Zealand</p>
+            <!-- <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-blue-400 transition-colors" aria-label="Facebook"><i class="fab fa-facebook-f text-xl"></i></a>
+                <a href="#" class="hover:text-blue-400 transition-colors" aria-label="LinkedIn"><i class="fab fa-linkedin-in text-xl"></i></a>
+                <a href="#" class="hover:text-blue-400 transition-colors" aria-label="Twitter"><i class="fab fa-twitter text-xl"></i></a>
+            </div> -->
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
