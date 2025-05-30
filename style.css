@@ -54,17 +54,3 @@ select#service {
     background-size: 1.5em 1.5em;
     padding-right: 2.5rem;
 }
-
-/* Basic responsive adjustments if not fully handled by Tailwind or for specific overrides */
-@media (max-width: 768px) {
-    /* Example: Adjust hero text size for smaller screens if Tailwind defaults aren't enough */
-    /* #home h1 {
-        font-size: 2.5rem; /* Equivalent to text-4xl */
-    /* }
-    #home p {
-        font-size: 1rem; /* Equivalent to text-base */
-    /* } */
-
-    /* Ensure mobile menu button is always visible if you implement more complex JS for it */
-    /* #mobile-menu-button { display: block; } */
-}
