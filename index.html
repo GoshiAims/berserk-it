@@ -13,14 +13,14 @@
 <body class="bg-gray-900 text-gray-100 antialiased">
 
     <header class="bg-gray-800/80 backdrop-blur-md shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div id="desktop-menu" class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-3xl font-bold text-blue-500">
                 Berserk<span class="text-white">IT</span>
             </a>
             <nav class="space-x-4 md:space-x-6">
-                <a href="#home" class="hover:text-blue-400 transition-colors duration-300">Home</a>
-                <a href="#services" class="hover:text-blue-400 transition-colors duration-300">Services</a>
-                <a href="#why-us" class="hover:text-blue-400 transition-colors duration-300">Why Us</a>
+                <a href="#home" class="hover:text-blue-400 transition-colors duration-300 hidden md:inline-block">Home</a>
+                <a href="#services" class="hover:text-blue-400 transition-colors duration-300 hidden md:inline-block">Services</a>
+                <a href="#why-us" class="hover:text-blue-400 transition-colors duration-300 hidden md:inline-block">Why Us</a>
                 <!-- <a href="#testimonials" class="hover:text-blue-400 transition-colors duration-300">Testimonials</a> -->
                 <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg text-sm cta-button hidden md:inline-block">
                 Contact Us
@@ -44,10 +44,10 @@
             <!-- <img src="https://placehold.co/150x150/111827/3B82F6?text=BerserkIT+Logo" alt="Berserk IT Logo" class="mx-auto mb-8 rounded-full shadow-xl w-32 h-32 md:w-40 md:h-40" onerror="this.onerror=null; this.src='https://placehold.co/150x150/111827/FFFFFF?text=Logo+Error';"> -->
             <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
                 <span class="text-blue-500">Berserk</span>IT:
-                <span class="block sm:inline-block text-gray-200">Tech Problems, Conquered.</span>
+                <span class="block sm:inline-block text-gray-200">Tech Problems Conquered</span>
             </h1>
             <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-                Fast, reliable, and expert Mobile IT support for your home and business in Auckland.
+                Fast, reliable, and expert Mobile IT support for your home and office in Auckland.
             </p>
             <div class="space-y-4 sm:space-y-0 sm:space-x-4">
                 <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg cta-button inline-block w-full sm:w-auto">
@@ -70,7 +70,7 @@
                 <div class="bg-gray-700 p-8 rounded-xl shadow-xl hover:shadow-blue-500/30 transition-all duration-300 service-card">
                     <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-laptop-medical"></i></div>
                     <h3 class="text-2xl font-semibold mb-3 text-white">Computer Repairs</h3>
-                    <p class="text-gray-300">Slow PC? Virus issues? Hardware failures? We diagnose and fix all computer problems, fast.</p>
+                    <p class="text-gray-300">Slow PC? Virus issues? Hardware failures?<br>We diagnose and fix all computer problems, fast.</p>
                 </div>
                 <div class="bg-gray-700 p-8 rounded-xl shadow-xl hover:shadow-blue-500/30 transition-all duration-300 service-card">
                     <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-shield-virus"></i></div>
@@ -94,7 +94,7 @@
     <section id="why-us" class="py-16 md:py-24 bg-gray-900">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12 md:mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-500 mb-3">Why Choose Berserk IT?</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-500 mb-3">Why Choose Berserk<span class="text-white">IT?</span></h2>
                 <p class="text-lg text-gray-400 max-w-xl mx-auto">We're not just tech experts; we're your friendly neighborhood IT partners.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8 text-center">
@@ -169,7 +169,6 @@
                             <option value="computer_repair">Computer Repair</option>
                             <option value="virus_removal">Virus & Malware Removal</option>
                             <option value="network_setup">Network & Wi-Fi Setup</option>
-                            <option value="business_it">Business IT Support</option>
                             <option value="device_setup">Device Setup & Training</option>
                             <option value="other">Other</option>
                         </select>
@@ -205,7 +204,7 @@
                     Berserk<span class="text-white">IT</span>
                 </a>
             </div>
-            <p class="mb-2">&copy; <span id="current-year"></span> Berserk IT. All Rights Reserved.</p>
+            <p class="mb-2">&copy; <span id="current-year"></span> BerserkIT. All Rights Reserved.</p>
             <p class="text-sm">Your Trusted Partner for IT Solutions in Auckland, New Zealand</p>
             <!-- <div class="mt-4 space-x-4">
                 <a href="#" class="hover:text-blue-400 transition-colors" aria-label="Facebook"><i class="fab fa-facebook-f text-xl"></i></a>
